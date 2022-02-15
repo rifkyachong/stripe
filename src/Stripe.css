@@ -1,0 +1,51 @@
+.stripe-navbar {
+  display: flex;
+}
+
+.stripe-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stripe-toggle-btn {
+  cursor: default;
+}
+
+.dropdown-content {
+  position: absolute;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.dropdown-content.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#example {
+  width: 500px;
+  height: 300px;
+}
+
+.stripe-box {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.stripe-box.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-content > * {
+  transition: 1s;
+}
